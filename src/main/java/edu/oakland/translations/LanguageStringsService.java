@@ -3,6 +3,7 @@ package edu.oakland.translations;
 import edu.oakland.translations.LanguageStrings;
 
 import org.springframework.stereotype.Service;
+import org.springframework.cache.annotation.Cacheable;
 
 import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;
@@ -10,11 +11,12 @@ import java.util.Locale;
 import java.util.Arrays;
 
 @Service
-public class LanguageStringsService {
+public class LanguageStringsService implements ILanguageStringsService {
   /**
    * Internationalize each string.
    * @param languageCode the IETF language tag from the browser
    **/
+  @Cacheable("translations")
   public LanguageStrings getTranslations(String languageCode) {
     LanguageStrings lngStrs = new LanguageStrings();
 
