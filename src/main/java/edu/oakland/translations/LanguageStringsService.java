@@ -74,24 +74,24 @@ public class LanguageStringsService implements ILanguageStringsService {
     // Set text translations
     switch (languageCode) {
       case "de": // German
-        lngStrs.setSection("Abschnitt");
+        lngStrs.setSection("Bereich");
         lngStrs.setCrn("CRN");
-        lngStrs.setCredits("Gutschriften");
+        lngStrs.setCredits("Punkte");
         lngStrs.setCourseDetails("Kursdetails");
         lngStrs.setCourseTitle("Kursname");
-        lngStrs.setDepartment("Abteilung");
-        lngStrs.setGrade("Klasse");
+        lngStrs.setDepartment("Fachbereich");
+        lngStrs.setGrade("Note");
         lngStrs.setDescription("Beshreibung");
-        lngStrs.setClose("Schließsen");
+        lngStrs.setClose("Schließen");
         lngStrs.setCourses("Kurse");
         lngStrs.setCalendar("Kalender");
         lngStrs.setGrades("Noten");
         lngStrs.setCourse("Kurs");
-        lngStrs.setLevel("Ebene");
-        lngStrs.setGac("Noten und Kredite");
+        lngStrs.setLevel("Bildungsebene");
+        lngStrs.setGac("Noten und Punkte");
 
         lngStrs.setWeek("Woche");
-        lngStrs.setSchedule("Zeitplan");
+        lngStrs.setSchedule("Stundenplan");
         lngStrs.setMonth("Monat");
 
         lngStrs.setHour7("7 Uhr");
