@@ -16,7 +16,7 @@ public class LanguageStringsService implements ILanguageStringsService {
    * Internationalize each string.
    * @param languageCode the IETF language tag from the browser
    **/
-  @Cacheable("translations")
+  @Cacheable(value="translations", key="{ #root.methodName, #languageCode }")
   public LanguageStrings getTranslations(String languageCode) {
     LanguageStrings lngStrs = new LanguageStrings();
 
