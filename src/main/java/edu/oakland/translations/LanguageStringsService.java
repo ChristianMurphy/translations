@@ -272,6 +272,45 @@ public class LanguageStringsService implements ILanguageStringsService {
         lngStrs.setHour23("23h00");
 
         break;
+        case "it": //Italian
+          lngStrs.setSection("Sezione");
+        lngStrs.setCrn("CRN");
+        lngStrs.setCredits("Crediti");
+        lngStrs.setCourseDetails("Detagli del corso");
+        lngStrs.setCourseTitle("Titolo del corso");
+        lngStrs.setDepartment("Departamento");
+        lngStrs.setGrade("Nota");
+        lngStrs.setDescription("Descrizione");
+        lngStrs.setClose("Ciuso");
+        lngStrs.setCourses("Corsi");
+        lngStrs.setCalendar("Calendario");
+        lngStrs.setGrades("Note");
+        lngStrs.setCourse("Corso");
+        lngStrs.setLevel("Livelo");// or Grado
+        lngStrs.setGac("Note e Crediti");
+
+        lngStrs.setWeek("Setimana");
+        lngStrs.setSchedule("Orario");
+        lngStrs.setMonth("Mese");
+
+        lngStrs.setHour7("07:00");
+        lngStrs.setHour8("08:00");
+        lngStrs.setHour9("09:00");
+        lngStrs.setHour10("10:00");
+        lngStrs.setHour11("11:00");
+        lngStrs.setHour12("12:00");
+        lngStrs.setHour13("13:00");
+        lngStrs.setHour14("14:00");
+        lngStrs.setHour15("15:00");
+        lngStrs.setHour16("16:00");
+        lngStrs.setHour17("17:00");
+        lngStrs.setHour18("18:00");
+        lngStrs.setHour19("19:00");
+        lngStrs.setHour20("20:00");
+        lngStrs.setHour21("21:00");
+        lngStrs.setHour22("22:00");
+        lngStrs.setHour23("23:00");
+        break;
       default: // Defaults to English (United States)
         lngStrs.setSection("Section");
         lngStrs.setCrn("CRN");
