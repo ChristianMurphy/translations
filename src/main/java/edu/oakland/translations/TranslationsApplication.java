@@ -9,12 +9,12 @@ import org.springframework.cache.annotation.EnableCaching;
 @SpringBootApplication
 @EnableCaching
 public class TranslationsApplication extends SpringBootServletInitializer {
-  @Override
-  protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-    return application.sources(TranslationsApplication.class);
-  }
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(TranslationsApplication.class);
+    }
 
-  public static void main(String[] args) {
-    SpringApplication.run(TranslationsApplication.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(TranslationsApplication.class, args);
+    }
 }

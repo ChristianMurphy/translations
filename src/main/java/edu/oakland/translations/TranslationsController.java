@@ -13,10 +13,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 @RestController
 @RequestMapping(value = "/locales")
 public class TranslationsController {
-  @Autowired ILanguageStringsService lngService;
+    @Autowired ILanguageStringsService lngService;
 
-  @RequestMapping(value = "/{lng}/{ns}", produces = "application/json")
-  public LanguageStrings translate(@PathVariable("lng") String lng) {
-    return lngService.getTranslations(lng);
-  }
+    @RequestMapping(value = "/{lng}/{ns}", produces = "application/json")
+    public LanguageStrings translate(@PathVariable("lng") String lng) {
+        return lngService.getTranslations(lng);
+    }
 }
