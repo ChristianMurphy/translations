@@ -1,24 +1,24 @@
 buildscript {
-	ext {
-		springBootVersion = '1.5.4.RELEASE'
-	}
+  ext {
+    springBootVersion = '1.5.4.RELEASE'
+  }
 
-	repositories {
+  repositories {
     maven { url "https://maven.oakland.edu/nexus/content/groups/public"
-      name "nexus"
+    name "nexus"
     }
 
     mavenLocal()
     mavenCentral()
-	}
+  }
 
-	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-	}
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+  }
 }
 
 plugins {
-    id "net.linguica.maven-settings" version "0.5"
+  id "net.linguica.maven-settings" version "0.5"
 }
 
 apply plugin: 'java'
@@ -45,8 +45,9 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
-	compileOnly('org.projectlombok:lombok')
+  compile('org.springframework.boot:spring-boot-starter-web')
+  compile("org.springframework.boot:spring-boot-starter-cache")
+  testCompile('org.springframework.boot:spring-boot-starter-test')
+  compileOnly('org.projectlombok:lombok')
   providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
