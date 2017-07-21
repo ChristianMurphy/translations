@@ -1,4 +1,4 @@
-package edu.oakland.translations;
+package edu.oakland.translations.models;
 
 import java.text.DateFormatSymbols;
 import java.text.SimpleDateFormat;
@@ -9,7 +9,7 @@ import lombok.Data;
 
 // Contains user interface strings and their internationalizations.
 @Data
-public class LanguageStrings {
+public class CoursesTranslations extends Translations {
     // Courses strings
     private String section;
     private String crn;

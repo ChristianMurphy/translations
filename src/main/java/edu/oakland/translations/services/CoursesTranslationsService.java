@@ -1,8 +1,6 @@
-package edu.oakland.translations;
+package edu.oakland.translations.services;
 
-import edu.oakland.translations.LanguageStrings;
-
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.springframework.cache.annotation.Cacheable;
 
 import java.text.DateFormatSymbols;
@@ -10,15 +8,18 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Arrays;
 
-@Service
-public class LanguageStringsService implements ILanguageStringsService {
+import edu.oakland.translations.models.Translations;
+import edu.oakland.translations.models.CoursesTranslations;
+
+@Component("courses")
+public class CoursesTranslationsService implements ITranslationsService {
     /**
      * Internationalize each string.
      * @param languageCode the IETF language tag from the browser
      **/
     @Cacheable(value = "translations", key = "{ #root.methodName, #languageCode }")
-    public LanguageStrings getTranslations(String languageCode) {
-        LanguageStrings lngStrs = new LanguageStrings();
+    public Translations getTranslations(String languageCode) {
+        CoursesTranslations lngStrs = new CoursesTranslations();
 
         // Set date and time formatting
         Locale locale = Locale.forLanguageTag(languageCode);

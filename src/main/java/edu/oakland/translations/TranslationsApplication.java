@@ -6,6 +6,10 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cache.annotation.EnableCaching;
 
+import org.springframework.beans.factory.config.ServiceLocatorFactoryBean;
+import org.springframework.beans.factory.FactoryBean;
+import org.springframework.context.annotation.Bean;
+
 @SpringBootApplication
 @EnableCaching
 public class TranslationsApplication extends SpringBootServletInitializer {
@@ -16,5 +20,12 @@ public class TranslationsApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
         SpringApplication.run(TranslationsApplication.class, args);
+    }
+
+    @Bean
+    public FactoryBean serviceLocatorFactoryBean() {
+        ServiceLocatorFactoryBean factoryBean = new ServiceLocatorFactoryBean();
+        factoryBean.setServiceLocatorInterface(ITranslationsFactory.class);
+        return factoryBean;
     }
 }
