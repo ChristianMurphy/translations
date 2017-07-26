@@ -17,19 +17,22 @@ import edu.oakland.translations.models.Translations;
 @RestController
 @RequestMapping(value = "/api-v1/locales")
 public class TranslationsController {
-    @Autowired ITranslationsFactory translationsFactory;
+  @Autowired ITranslationsFactory translationsFactory;
 
-    private final Logger log = LoggerFactory.getLogger(getClass());
+  private final Logger log = LoggerFactory.getLogger(getClass());
 
-    @RequestMapping(value = "/{portlet}/{lng}/{ns}", produces = "application/json")
-    public Translations translate(@PathVariable("lng") String lng,
-        @PathVariable("portlet") String portlet, final HttpServletResponse response) {
-        try {
-            return translationsFactory.get(portlet).getTranslations(lng);
-        } catch (Exception e) {
-            log.info("portlet {} not found", portlet);
-            response.setStatus(HttpStatus.NOT_FOUND.value());
-            return null;
-        }
+  @RequestMapping(value = "/{portlet}/{lng}/{ns}",
+                  produces = "application/json")
+  public Translations
+  translate(@PathVariable("lng") String lng,
+            @PathVariable("portlet") String portlet,
+            final HttpServletResponse response) {
+    try {
+      return translationsFactory.get(portlet).getTranslations(lng);
+    } catch (Exception e) {
+      log.info("portlet {} not found", portlet);
+      response.setStatus(HttpStatus.NOT_FOUND.value());
+      return null;
     }
+  }
 }
