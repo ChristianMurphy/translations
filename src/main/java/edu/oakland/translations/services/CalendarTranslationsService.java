@@ -98,54 +98,6 @@ public class CalendarTranslationsService implements ITranslationsService {
       lngStrs.setHour23("23 Uhr");
 
       break;
-    case "en-GB": // English (Great Britain)
-      lngStrs.setWeek("Week");
-      lngStrs.setSchedule("Schedule");
-      lngStrs.setMonth("Month");
-
-      lngStrs.setHour7("07:00");
-      lngStrs.setHour8("08:00");
-      lngStrs.setHour9("09:00");
-      lngStrs.setHour10("10:00");
-      lngStrs.setHour11("11:00");
-      lngStrs.setHour12("12:00");
-      lngStrs.setHour13("13:00");
-      lngStrs.setHour14("14:00");
-      lngStrs.setHour15("15:00");
-      lngStrs.setHour16("16:00");
-      lngStrs.setHour17("17:00");
-      lngStrs.setHour18("18:00");
-      lngStrs.setHour19("19:00");
-      lngStrs.setHour20("20:00");
-      lngStrs.setHour21("21:00");
-      lngStrs.setHour22("22:00");
-      lngStrs.setHour23("23:00");
-
-      break;
-    case "en-US": // English (United States)
-      lngStrs.setWeek("Week");
-      lngStrs.setSchedule("Schedule");
-      lngStrs.setMonth("Month");
-
-      lngStrs.setHour7("7am");
-      lngStrs.setHour8("8am");
-      lngStrs.setHour9("9am");
-      lngStrs.setHour10("10am");
-      lngStrs.setHour11("11am");
-      lngStrs.setHour12("12pm");
-      lngStrs.setHour13("1pm");
-      lngStrs.setHour14("2pm");
-      lngStrs.setHour15("3pm");
-      lngStrs.setHour16("4pm");
-      lngStrs.setHour17("5pm");
-      lngStrs.setHour18("6pm");
-      lngStrs.setHour19("7pm");
-      lngStrs.setHour20("8pm");
-      lngStrs.setHour21("9pm");
-      lngStrs.setHour22("10pm");
-      lngStrs.setHour23("11pm");
-
-      break;
     case "es": // Spanish
       lngStrs.setWeek("Semana");
       lngStrs.setSchedule("Horario");
@@ -216,6 +168,8 @@ public class CalendarTranslationsService implements ITranslationsService {
       lngStrs.setHour22("22:00");
       lngStrs.setHour23("23:00");
       break;
+    case "en-US": // English (United States)
+    case "en-GB": // English (Great Britain)
     default: // Defaults to English (United States)
       lngStrs.setWeek("Week");
       lngStrs.setSchedule("Schedule");
