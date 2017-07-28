@@ -41,41 +41,6 @@ public class CoursesTranslationsService implements ITranslationsService {
       lngStrs.setGac("Noten und Punkte");
 
       break;
-    case "en-GB": // English (Great Britain)
-      lngStrs.setSection("Section");
-      lngStrs.setCrn("CRN");
-      lngStrs.setCredits("Credits");
-      lngStrs.setCourseDetails("Course Details");
-      lngStrs.setCourseTitle("Course Title");
-      lngStrs.setDepartment("Department");
-      lngStrs.setGrade("Grade");
-      lngStrs.setDescription("Description");
-      lngStrs.setClose("Close");
-      lngStrs.setCourses("Courses");
-      lngStrs.setCalendar("Calendar");
-      lngStrs.setGrades("Grades");
-      lngStrs.setCourse("Course");
-      lngStrs.setLevel("Level");
-      lngStrs.setGac("Grades and Credits");
-      break;
-
-    case "en-US": // English (United States)
-      lngStrs.setSection("Section");
-      lngStrs.setCrn("CRN");
-      lngStrs.setCredits("Credits");
-      lngStrs.setCourseDetails("Course Details");
-      lngStrs.setCourseTitle("Course Title");
-      lngStrs.setDepartment("Department");
-      lngStrs.setGrade("Grade");
-      lngStrs.setDescription("Description");
-      lngStrs.setClose("Close");
-      lngStrs.setCourses("Courses");
-      lngStrs.setCalendar("Calendar");
-      lngStrs.setGrades("Grades");
-      lngStrs.setCourse("Course");
-      lngStrs.setLevel("Level");
-      lngStrs.setGac("Grades and Credits");
-      break;
 
     case "es": // Spanish
       lngStrs.setSection("Sección");
@@ -131,6 +96,8 @@ public class CoursesTranslationsService implements ITranslationsService {
       lngStrs.setGac("Note e Crediti");
       break;
 
+    case "en-US": // English (United States)
+    case "en-GB": // English (Great Britain)
     default: // Defaults to English (United States)
       lngStrs.setSection("Section");
       lngStrs.setCrn("CRN");
