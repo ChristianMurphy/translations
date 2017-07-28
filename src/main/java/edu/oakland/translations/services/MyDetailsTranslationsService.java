@@ -40,6 +40,21 @@ public class MyDetailsTranslationsService implements ITranslationsService {
                 lngStrs.setApplyToGradBody(
                     "Our records indicate that you are a Senior and have not applied to graduate yet. If you are ready to do so please select apply.");
                 break;
+                case "it": // Italian
+                lngStrs.setMajor("Magiore"); //Should double check the following 3
+                lngStrs.setMinor("Minore");
+                lngStrs.setConcentration("Concentrazione");
+                lngStrs.setAddress("Indirizzo");
+                lngStrs.setPhoneNumber("Numero di telefono");
+                lngStrs.setEmail("Indirizzo electronico");
+                lngStrs.setLegalName("Nome legale");
+                lngStrs.setPrefFirstName("Nome preferito");
+                lngStrs.setApply("Applicare");
+                lngStrs.setClose("Chiudere");
+                lngStrs.setApplyToGradHeader("Dommanda di laurea");//should double check the following 2
+                lngStrs.setApplyToGradBody(
+                    "I nostri recordi indicano che voi siete al'ultimo anno e non avete applicato di laurearvi. Se siete pronti, vi suggestiamo di applicare.");
+                break;
         }
         return lngStrs;
     }
