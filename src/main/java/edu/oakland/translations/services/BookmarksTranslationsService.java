@@ -8,11 +8,15 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Arrays;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import edu.oakland.translations.models.Translations;
 import edu.oakland.translations.models.BookmarksTranslations;
 
 @Component("bookmarks")
 public class BookmarksTranslationsService implements ITranslationsService {
+    private final Logger log = LoggerFactory.getLogger(getClass());
     /**
      * Internationalize each string.
      * @param languageCode the IETF language tag from the browser
@@ -20,7 +24,8 @@ public class BookmarksTranslationsService implements ITranslationsService {
     @Cacheable(value = "bookmarks", key = "{ #root.methodName, #languageCode }")
     public Translations getTranslations(String languageCode) {
         BookmarksTranslations lngStrs = new BookmarksTranslations();
-
+        log.error("service");
+        log.error(languageCode);
         // Set text translations
         switch (languageCode) {
             case "it": // Italian
@@ -46,6 +51,15 @@ public class BookmarksTranslationsService implements ITranslationsService {
                 lngStrs.setUnavailable("I tuoi segnalibri non sono attualmente disponibili");
                 lngStrs.setDeleteBookmarkConfirm("Sei sicuro di voler eliminare questo segnalibro?");
                 lngStrs.setDeleteFolderConfirm("Sei sicuro di voler eliminare questa cartella?");
+
+                lngStrs.setBookmarkMenu("Menu Segnalibri");
+                lngStrs.setFolderMenu("Menu di cartella");
+                lngStrs.setPreviousPage("Pagina precedente");
+                lngStrs.setNextPage("Pagina successiva");
+                lngStrs.setCollapseFolder("Chiudi cartella");
+                lngStrs.setExpandFolder("Espandi cartella");
+                lngStrs.setSearchBookmarks("Cerca segnalibri");
+                lngStrs.setSettings("Impostazioni");
                 break;
             case "es": // Spanish 
                 lngStrs.setSearch("Buscar");
@@ -70,6 +84,15 @@ public class BookmarksTranslationsService implements ITranslationsService {
                 lngStrs.setUnavailable("Tus marcadores ya no están disponibles");
                 lngStrs.setDeleteBookmarkConfirm("¿Estás seguro de que quieres eliminar este marcador?");
                 lngStrs.setDeleteFolderConfirm("¿Está seguro de que desea eliminar esta carpeta?");
+
+                lngStrs.setBookmarkMenu("Menú de marcadores");
+                lngStrs.setFolderMenu("Menú de carpetas");
+                lngStrs.setPreviousPage("Pagina anterior");
+                lngStrs.setNextPage("Siguiente página");
+                lngStrs.setCollapseFolder("Contraer carpeta");
+                lngStrs.setExpandFolder("Expanda la carpeta");
+                lngStrs.setSearchBookmarks("Buscar Marcadores");
+                lngStrs.setSettings("Configuración");
                 break;
             case "fr": // French
                 lngStrs.setSearch("Chercher");
@@ -94,6 +117,15 @@ public class BookmarksTranslationsService implements ITranslationsService {
                 lngStrs.setUnavailable("Vos favoris ne sont actuellement pas disponibles");
                 lngStrs.setDeleteBookmarkConfirm("Êtes vous sûr de vouloir supprimer ce marque-page?");
                 lngStrs.setDeleteFolderConfirm("Êtes-vous sûr de vouloir supprimer ce dossier?");
+
+                lngStrs.setBookmarkMenu("Menu Signet");
+                lngStrs.setFolderMenu("Menu du dossier");
+                lngStrs.setPreviousPage("Page précédente");
+                lngStrs.setNextPage("Page suivante");
+                lngStrs.setCollapseFolder("Fermer le dossier");
+                lngStrs.setExpandFolder("Dossier ouvert");
+                lngStrs.setSearchBookmarks("Rechercher des signets");
+                lngStrs.setSettings("Paramètres");
                 break;
             case "de": // German
                 lngStrs.setSearch("Suche");
@@ -118,9 +150,49 @@ public class BookmarksTranslationsService implements ITranslationsService {
                 lngStrs.setUnavailable("Ihre Lesezeichen sind derzeit nicht verfügbar");
                 lngStrs.setDeleteBookmarkConfirm("Sind Sie sicher, dass Sie dieses Lesezeichen löschen möchten?");
                 lngStrs.setDeleteFolderConfirm("Sind Sie sicher, dass Sie diesen Ordner löschen möchten?");
+
+                lngStrs.setBookmarkMenu("Lesezeichen-Menü");
+                lngStrs.setFolderMenu("Ordnermenü");
+                lngStrs.setPreviousPage("Vorherige Seite");
+                lngStrs.setNextPage("Folgeseite");
+                lngStrs.setCollapseFolder("Ordner schließen");
+                lngStrs.setExpandFolder("Ordner erweitern");
+                lngStrs.setSearchBookmarks("Lesezeichen suchen");
+                lngStrs.setSettings("Einstellungen");
                 break;
-            case "en-GB": // English (Great Britain)
             case "en-US": // English (United States)
+                lngStrs.setSearch("Search");
+                lngStrs.setEdit("Edit");
+                lngStrs.setDelete("Delete");
+                lngStrs.setAddToFolder("Add to folder");
+                lngStrs.setRemoveFromFolder("Remove from folder");
+                lngStrs.setNewBookmark("New Bookmark");
+                lngStrs.setNewFolder("New Folder");
+                lngStrs.setFolder("folder");
+                lngStrs.setTitle("Title");
+                lngStrs.setUrl("Url");
+                lngStrs.setNote("Note");
+                lngStrs.setSave("Save");
+                lngStrs.setCancel("Cancel");
+                lngStrs.setPreferences("Preferences");
+                lngStrs.setBookmarkPref("Items per page");
+                lngStrs.setExpand("Expand");
+                lngStrs.setCollapse("Collapse");
+                lngStrs.setPage("Page");
+                lngStrs.setPreferenceError("Unable to save Preference");
+                lngStrs.setUnavailable("Your bookmarks are currently unavailable");
+                lngStrs.setDeleteBookmarkConfirm("Are you sure you want to delete this bookmark?");
+                lngStrs.setDeleteFolderConfirm("Are you sure you want to delete this folder?");
+
+                lngStrs.setBookmarkMenu("Bookmark Menu");
+                lngStrs.setFolderMenu("Folder Menu");
+                lngStrs.setPreviousPage("Previous Page");
+                lngStrs.setNextPage("Next Page");
+                lngStrs.setCollapseFolder("Collapse Folder");
+                lngStrs.setExpandFolder("Expand Folder");
+                lngStrs.setSearchBookmarks("Search Bookmarks");
+                lngStrs.setSettings("Settings");
+                break;
             default: // Defaults to English (United States)
                 lngStrs.setSearch("Search");
                 lngStrs.setEdit("Edit");
@@ -144,6 +216,15 @@ public class BookmarksTranslationsService implements ITranslationsService {
                 lngStrs.setUnavailable("Your bookmarks are currently unavailable");
                 lngStrs.setDeleteBookmarkConfirm("Are you sure you want to delete this bookmark?");
                 lngStrs.setDeleteFolderConfirm("Are you sure you want to delete this folder?");
+
+                lngStrs.setBookmarkMenu("Bookmark Menu");
+                lngStrs.setFolderMenu("Folder Menu");
+                lngStrs.setPreviousPage("Previous Page");
+                lngStrs.setNextPage("Next Page");
+                lngStrs.setCollapseFolder("Collapse Folder");
+                lngStrs.setExpandFolder("Expand Folder");
+                lngStrs.setSearchBookmarks("Search Bookmarks");
+                lngStrs.setSettings("Settings");
                 break;
         }
         return lngStrs;

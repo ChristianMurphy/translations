@@ -32,4 +32,14 @@ public class BookmarksTranslations extends Translations {
   private String unavailable;
   private String deleteBookmarkConfirm;
   private String deleteFolderConfirm;
+
+  // aria-label translations
+  private String bookmarkMenu;
+  private String folderMenu;
+  private String previousPage;
+  private String nextPage;
+  private String collapseFolder;
+  private String expandFolder;
+  private String searchBookmarks;
+  private String settings;
 }
