@@ -160,39 +160,9 @@ public class BookmarksTranslationsService implements ITranslationsService {
                 lngStrs.setSearchBookmarks("Lesezeichen suchen");
                 lngStrs.setSettings("Einstellungen");
                 break;
-            case "en-US": // English (United States)
-                lngStrs.setSearch("Search");
-                lngStrs.setEdit("Edit");
-                lngStrs.setDelete("Delete");
-                lngStrs.setAddToFolder("Add to folder");
-                lngStrs.setRemoveFromFolder("Remove from folder");
-                lngStrs.setNewBookmark("New Bookmark");
-                lngStrs.setNewFolder("New Folder");
-                lngStrs.setFolder("folder");
-                lngStrs.setTitle("Title");
-                lngStrs.setUrl("Url");
-                lngStrs.setNote("Note");
-                lngStrs.setSave("Save");
-                lngStrs.setCancel("Cancel");
-                lngStrs.setPreferences("Preferences");
-                lngStrs.setBookmarkPref("Items per page");
-                lngStrs.setExpand("Expand");
-                lngStrs.setCollapse("Collapse");
-                lngStrs.setPage("Page");
-                lngStrs.setPreferenceError("Unable to save Preference");
-                lngStrs.setUnavailable("Your bookmarks are currently unavailable");
-                lngStrs.setDeleteBookmarkConfirm("Are you sure you want to delete this bookmark?");
-                lngStrs.setDeleteFolderConfirm("Are you sure you want to delete this folder?");
-
-                lngStrs.setBookmarkMenu("Bookmark Menu");
-                lngStrs.setFolderMenu("Folder Menu");
-                lngStrs.setPreviousPage("Previous Page");
-                lngStrs.setNextPage("Next Page");
-                lngStrs.setCollapseFolder("Collapse Folder");
-                lngStrs.setExpandFolder("Expand Folder");
-                lngStrs.setSearchBookmarks("Search Bookmarks");
-                lngStrs.setSettings("Settings");
-                break;
+            case "en":
+            case "en-US":
+            case "en-GB":
             default: // Defaults to English (United States)
                 lngStrs.setSearch("Search");
                 lngStrs.setEdit("Edit");
