@@ -24,4 +24,5 @@ public class CoursesTranslations extends Translations {
   private String course;
   private String level;
   private String gac;
+  private String waitlist;
 }

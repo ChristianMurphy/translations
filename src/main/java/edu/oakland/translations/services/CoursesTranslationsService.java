@@ -39,6 +39,7 @@ public class CoursesTranslationsService implements ITranslationsService {
       lngStrs.setCourse("Kurs");
       lngStrs.setLevel("Bildungsebene");
       lngStrs.setGac("Noten und Punkte");
+      lngStrs.setWaitlist("Warteliste Position");
 
       break;
 
@@ -58,6 +59,7 @@ public class CoursesTranslationsService implements ITranslationsService {
       lngStrs.setCourse("Curso");
       lngStrs.setLevel("Nivel");
       lngStrs.setGac("Notas y Créditos");
+      lngStrs.setWaitlist("Posición de lista de espera");
       break;
 
     case "fr": // French
@@ -76,6 +78,7 @@ public class CoursesTranslationsService implements ITranslationsService {
       lngStrs.setCourse("Cour");
       lngStrs.setLevel("Niveau");
       lngStrs.setGac("Notes et crédits");
+      lngStrs.setWaitlist("Position de la liste d'attent");
       break;
 
     case "it": // Italian
@@ -94,11 +97,12 @@ public class CoursesTranslationsService implements ITranslationsService {
       lngStrs.setCourse("Corso");
       lngStrs.setLevel("Livelo"); // or Grado
       lngStrs.setGac("Note e Crediti");
+      lngStrs.setWaitlist("Posizione di attesa");
       break;
 
     case "en-US": // English (United States)
     case "en-GB": // English (Great Britain)
-    default: // Defaults to English (United States)
+    default:      // Defaults to English (United States)
       lngStrs.setSection("Section");
       lngStrs.setCrn("CRN");
       lngStrs.setCredits("Credits");
@@ -114,6 +118,7 @@ public class CoursesTranslationsService implements ITranslationsService {
       lngStrs.setCourse("Course");
       lngStrs.setLevel("Level");
       lngStrs.setGac("Grades and Credits");
+      lngStrs.setWaitlist("Waitlist Position");
       break;
     }
     return lngStrs;
