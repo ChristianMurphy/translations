@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 import edu.oakland.translations.models.Translations;
 
 @RestController
-@RequestMapping(value = "/api-v1/locales")
+@RequestMapping(value = "/api/v1/locales")
 public class TranslationsController {
   @Autowired ITranslationsFactory translationsFactory;
 
