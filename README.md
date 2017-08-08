@@ -7,7 +7,7 @@ This application makes heavy use of the [factory pattern](https://www.tutorialsp
 ## Caching
 When creating a new `@Component` that component's name needs to be appended to the [application.properties](https://github.com/Oakland-University/translations/blob/TR-2/src/main/resources/application.properties#L3) file with the rest of the cac he names. The `Cacheable` annotation should follow the following format `@Cacheable(value = "portlet_name", key = "{ #root.methodName, #languageCode }")`
 
-To view the translations go to `/api-v1/locales/{porlet_name}/{lng}/{ns}`. If no portlet/soffit name is found, it will return a 404.
+To view the translations go to `/api/v1/locales/{porlet_name}/{lng}/{ns}`. If no portlet/soffit name is found, it will return a 404.
 
 ## Building
 `./gradlew clean assemble`
