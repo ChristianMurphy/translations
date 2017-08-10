@@ -73,7 +73,7 @@ public class MyDetailsTranslationsService implements ITranslationsService {
                 lngStrs.setAppliedToGradHeader("You have applied to graduate");
                 lngStrs.setAppliedToGradBody(
                     "Our records show you have applied to graduate! Remember to periodically check your email for more information.");
-                lngStrs.setDisplay("Display Personal Information");
+                lngStrs.setDisplay("Display your personal information");
                 lngStrs.setSomethingWrong("See something wrong?");
                 lngStrs.setChangeInfo("Click here to update your information");
                 lngStrs.setClassStanding("Class Standing");
