@@ -55,7 +55,7 @@ public class MyDetailsTranslationsService implements ITranslationsService {
             case "en-GB": // English (Great Britain)
             case "en-US": // English (United States)
             default: // Defaults to English (United States)
-                lngStrs.setGid("GID");
+                lngStrs.setGid("Grizzly ID");
                 lngStrs.setMajor("Major");
                 lngStrs.setMinor("Minor");
                 lngStrs.setConcentration("Concentration");
