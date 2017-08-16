@@ -23,8 +23,10 @@ public class MyDetailsTranslations extends Translations {
     private String close;
     private String applyToGradHeader;
     private String applyToGradBody;
+    private String advisingApplyToGradBody;
     private String appliedToGradHeader;
     private String appliedToGradBody;
+    private String advisingAppliedToGradBody;
     private String display;
     private String somethingWrong;
     private String changeInfo;
