@@ -24,8 +24,7 @@ public class BookmarksTranslationsService implements ITranslationsService {
     @Cacheable(value = "bookmarks", key = "{ #root.methodName, #languageCode }")
     public Translations getTranslations(String languageCode) {
         BookmarksTranslations lngStrs = new BookmarksTranslations();
-        log.error("service");
-        log.error(languageCode);
+
         // Set text translations
         switch (languageCode) {
             case "it": // Italian
