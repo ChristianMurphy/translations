@@ -15,6 +15,7 @@ public class ClassRosterTranslations extends Translations {
   private String courseInfo;
   private String credits;
   private String crn;
+  private String section;
   private String locationAndTime;
   private String students;
   private String name;
@@ -25,6 +26,8 @@ public class ClassRosterTranslations extends Translations {
   private String winter;
   private String spring;
   private String summer;
+  private String error;
+  private String errorMessage;
 
   // aria-label translations
   private String termMenu;

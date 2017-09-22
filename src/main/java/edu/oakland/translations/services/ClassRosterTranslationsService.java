@@ -33,6 +33,7 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setCourseInfo("Informazioni sul corso");
                 lngStrs.setCredits("Crediti");
                 lngStrs.setCrn("Crn");
+                lngStrs.setSection("Sezione");
                 lngStrs.setLocationAndTime("Posizione e ora");
                 lngStrs.setStudents("Studenti");
                 lngStrs.setName("Nome");
@@ -44,6 +45,9 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setSpring("Primavera");
                 lngStrs.setSummer("Estate");
                 lngStrs.setTermMenu("Termini Menu");
+                lngStrs.setError("Errore");
+                lngStrs.setErrorMessage("Impossibile recuperare i tuoi dati in questo momento. Per favore riprova più tardi.");
+
                 break;
             case "es": // Spanish 
                 lngStrs.setTerms("Condiciones");
@@ -51,6 +55,7 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setCourseInfo("Información del curso");
                 lngStrs.setCredits("Créditos");
                 lngStrs.setCrn("Crn");
+                lngStrs.setSection("Sección");
                 lngStrs.setLocationAndTime("Ubicación y Tiempo");
                 lngStrs.setStudents("Estudiantes");
                 lngStrs.setName("Nombre");
@@ -62,6 +67,8 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setSpring("Primavera");
                 lngStrs.setSummer("Verano");
                 lngStrs.setTermMenu("Menú de términos");
+                lngStrs.setError("Error");
+                lngStrs.setErrorMessage("No hemos podido obtener sus datos en este momento. Por favor, inténtelo de nuevo más tarde.");
                 break;
             case "fr": // French
                 lngStrs.setTerms("Termes");
@@ -69,6 +76,7 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setCourseInfo("Informations sur le cours");
                 lngStrs.setCredits("Crédits");
                 lngStrs.setCrn("Crn");
+                lngStrs.setSection("Quartier");
                 lngStrs.setLocationAndTime("Lieu et heure");
                 lngStrs.setStudents("Élèves");
                 lngStrs.setName("Prénom");
@@ -80,6 +88,8 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setSpring("Printemps");
                 lngStrs.setSummer("Été");
                 lngStrs.setTermMenu("Menu Conditions");
+                lngStrs.setError("Erreur");
+                lngStrs.setErrorMessage("Nous n'avons pas pu récupérer vos données en ce moment. Veuillez réessayer plus tard.");
                 break;
             case "de": // German
                 lngStrs.setTerms("Begriffe");
@@ -87,6 +97,7 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setCourseInfo("Kursinfo");
                 lngStrs.setCredits("Kredite");
                 lngStrs.setCrn("Crn");
+                lngStrs.setSection("Abschnitt");
                 lngStrs.setLocationAndTime("Lage und Zeit");
                 lngStrs.setStudents("Studenten");
                 lngStrs.setName("Name");
@@ -98,6 +109,8 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setSpring("Frühling");
                 lngStrs.setSummer("Sommer");
                 lngStrs.setTermMenu("Begriffe Menü");
+                lngStrs.setError("Fehler");
+                lngStrs.setErrorMessage("Wir konnten Ihre Daten zu diesem Zeitpunkt nicht abrufen. Bitte versuchen Sie es später noch einmal.");
                 break;
             case "en":
             case "en-US":
@@ -108,6 +121,7 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setCourseInfo("Course Info");
                 lngStrs.setCredits("Credits");
                 lngStrs.setCrn("Crn");
+                lngStrs.setSection("Section");
                 lngStrs.setLocationAndTime("Location and Time");
                 lngStrs.setStudents("Students");
                 lngStrs.setName("Name");
@@ -119,6 +133,8 @@ public class ClassRosterTranslationsService implements ITranslationsService {
                 lngStrs.setSpring("Spring");
                 lngStrs.setSummer("Summer");
                 lngStrs.setTermMenu("Term Menu");
+                lngStrs.setError("Error");
+                lngStrs.setErrorMessage("We were unable to fetch your data at this time. Please Try again later.");
                 break;
         }
         return lngStrs;
