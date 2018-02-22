@@ -140,7 +140,7 @@ public class BookmarksTranslationsService implements ITranslationsService {
                 lngStrs.setUrl("Url");
                 lngStrs.setNote("Hinweis");
                 lngStrs.setSave("sparen");
-                lngStrs.setCancel("Stornieren");
+                lngStrs.setCancel("Abbrechen");
                 lngStrs.setPreferences("Präferenzen");
                 lngStrs.setBookmarkPref("Objekte pro Seite");
                 lngStrs.setExpand("Erweitern");
