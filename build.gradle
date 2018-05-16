@@ -43,6 +43,10 @@ repositories {
   maven { 
     url "https://maven.oakland.edu/nexus/content/groups/public"  
     name "nexus"
+    credentials {
+      username "$mavenUser"
+      password "$mavenPassword"
+    }
   }
 
   maven { 
