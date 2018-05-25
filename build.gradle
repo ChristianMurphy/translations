@@ -4,14 +4,16 @@ buildscript {
   }
 
   repositories {
-    maven { 
-      credentials {
-        username "$mavenUser"
-        password "$mavenPassword"
-      }
+    if (project.hasProperty("mavenUser") && project.hasProperty("mavenPassword")) {
+      maven {
+        credentials {
+          username "$mavenUser"
+          password "$mavenPassword"
+        }
 
-      url "https://maven.oakland.edu/nexus/content/groups/public"
-      name "nexus"
+        url "https://maven.oakland.edu/nexus/content/groups/public"
+        name "nexus"
+      }
     }
 
     mavenLocal()
@@ -32,25 +34,27 @@ version = '3.0.4'
 sourceCompatibility = 1.8
 
 war {
-  archiveName project.name + '.war'  
+  archiveName project.name + '.war'
 }
 
 bootWar {
-  archiveName project.name + '.war'  
+  archiveName project.name + '.war'
 }
 
 repositories {
-  maven { 
-    url "https://maven.oakland.edu/nexus/content/groups/public"  
-    name "nexus"
-    credentials {
-      username "$mavenUser"
-      password "$mavenPassword"
+  if (project.hasProperty("mavenUser") && project.hasProperty("mavenPassword")) {
+    maven {
+      url "https://maven.oakland.edu/nexus/content/groups/public"
+      name "nexus"
+      credentials {
+        username "$mavenUser"
+        password "$mavenPassword"
+      }
     }
   }
 
-  maven { 
-    url "https://oss.sonatype.org/content/repositories/snapshots" 
+  maven {
+    url "https://oss.sonatype.org/content/repositories/snapshots"
   }
 }
 
