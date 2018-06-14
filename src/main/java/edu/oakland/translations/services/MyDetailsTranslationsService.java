@@ -56,6 +56,34 @@ public class MyDetailsTranslationsService implements ITranslationsService {
                                                               // review this
       lngStrs.setClassStanding("Classe in piedi"); // Doris, should review this
       break;
+    case "fr": // French 
+      lngStrs.setGid("Grizzly ID");
+      lngStrs.setMajor("Majeur");
+      lngStrs.setMinor("Mineur");
+      lngStrs.setConcentration("Concentration");
+      lngStrs.setAddress("Addresse");
+      lngStrs.setPhoneNumber("Numéro de Téléphone");
+      lngStrs.setEmail("Email");
+      lngStrs.setLegalName("Nom Légal");
+      lngStrs.setPrefFirstName("Prénom Préféré");
+      lngStrs.setPrefFNameHeader("Changez votre prénom préféré");
+      lngStrs.setApply("Appliquez");
+      lngStrs.setClose("Fermez");
+      lngStrs.setApplyToGradHeader("Appliquez pour obtenir son diplôme?");
+      lngStrs.setApplyToGradBody(
+          "Nos archives indiquent que vous êtes un senior et n'avez pas encore appliqué pour obtenir son diplôme. Si vous êtes prêt à le faire, sélectionnez appliquez.");
+      lngStrs.setAdvisingApplyToGradBody(
+          "Nos archives indiquent que ce etudiante êtes un senior et n'avez pas encore appliqué pour obtenir son diplôme.");
+      lngStrs.setAppliedToGradHeader("Vous avez appliqué pour obtenir son diplôme.");
+      lngStrs.setAppliedToGradBody(
+          "Nos archives indiquent que vous avez appliqué pour obtenir son diplôme. Vérifiez votre email pour plus d'informations.");
+      lngStrs.setAdvisingAppliedToGradBody(
+          "Nos archives indiquent que ce etudiante a appliqué pour obtenir son diplôme.");
+      lngStrs.setDisplay("Afficher votre informations personnelles.");
+      lngStrs.setSomethingWrong("Voyez-vous quelque chose d'incorrect?");
+      lngStrs.setChangeInfo("Cliquez ici pour mettre à jour votre information");
+      lngStrs.setClassStanding("Classe Debout");
+      break;
     case "en-GB": // English (Great Britain)
     case "en-US": // English (United States)
     default:      // Defaults to English (United States)
