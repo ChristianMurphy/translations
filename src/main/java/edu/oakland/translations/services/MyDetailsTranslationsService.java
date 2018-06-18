@@ -67,22 +67,22 @@ public class MyDetailsTranslationsService implements ITranslationsService {
       lngStrs.setLegalName("Nom Légal");
       lngStrs.setPrefFirstName("Prénom Préféré");
       lngStrs.setPrefFNameHeader("Changez votre prénom préféré");
-      lngStrs.setApply("Appliquez");
-      lngStrs.setClose("Fermez");
-      lngStrs.setApplyToGradHeader("Appliquez pour obtenir son diplôme?");
+      lngStrs.setApply("Postuler");
+      lngStrs.setClose("Fermer");
+      lngStrs.setApplyToGradHeader("Postuler pour obtenir son diplôme ?");
       lngStrs.setApplyToGradBody(
-          "Nos archives indiquent que vous êtes un senior et n'avez pas encore appliqué pour obtenir son diplôme. Si vous êtes prêt à le faire, sélectionnez appliquez.");
+          "Nos archives indiquent que vous êtes en dernière année d'études de premier cycle et vous n'avez pas encore postulé pour obtenir son diplôme. Si vous êtes prêt à le faire, sélectionnez \"Appliquez\".");
       lngStrs.setAdvisingApplyToGradBody(
-          "Nos archives indiquent que ce etudiante êtes un senior et n'avez pas encore appliqué pour obtenir son diplôme.");
-      lngStrs.setAppliedToGradHeader("Vous avez appliqué pour obtenir son diplôme.");
+          "Nos archives indiquent que cet etudiant est en dernière année d'étude de premier cycle et qu’il n’a pas encore postulé pour obtenir son diplôme.");
+      lngStrs.setAppliedToGradHeader("Vous avez postulé pour obtenir son diplôme.");
       lngStrs.setAppliedToGradBody(
-          "Nos archives indiquent que vous avez appliqué pour obtenir son diplôme. Vérifiez votre email pour plus d'informations.");
+          "Nos archives indiquent que vous avez postulé pour obtenir son diplôme. Vérifiez votre messagerie pour plus d'informations.");
       lngStrs.setAdvisingAppliedToGradBody(
-          "Nos archives indiquent que ce etudiante a appliqué pour obtenir son diplôme.");
-      lngStrs.setDisplay("Afficher votre informations personnelles.");
-      lngStrs.setSomethingWrong("Voyez-vous quelque chose d'incorrect?");
-      lngStrs.setChangeInfo("Cliquez ici pour mettre à jour votre information");
-      lngStrs.setClassStanding("Classe Debout");
+          "Nos archives indiquent que ce etudiante a postulé pour obtenir son diplôme.");
+      lngStrs.setDisplay("Consulter vos informations personnelles.");
+      lngStrs.setSomethingWrong("Voyez-vous quelque chose d'incorrect ?");
+      lngStrs.setChangeInfo("Cliquez ici pour mettre à jour vos informations");
+      lngStrs.setClassStanding("Status du cours");
       break;
     case "en-GB": // English (Great Britain)
     case "en-US": // English (United States)
