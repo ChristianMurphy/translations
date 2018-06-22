@@ -69,14 +69,14 @@ public class MyDetailsTranslationsService implements ITranslationsService {
       lngStrs.setPrefFNameHeader("Changez votre prénom préféré");
       lngStrs.setApply("Postuler");
       lngStrs.setClose("Fermer");
-      lngStrs.setApplyToGradHeader("Postuler pour obtenir son diplôme ?");
+      lngStrs.setApplyToGradHeader("Postuler pour obtenir votre diplôme ?");
       lngStrs.setApplyToGradBody(
           "Nos archives indiquent que vous êtes en dernière année d'études de premier cycle et vous n'avez pas encore postulé pour obtenir votre diplôme. Si vous êtes prêt à le faire, sélectionnez \"Appliquez\".");
       lngStrs.setAdvisingApplyToGradBody(
           "Nos archives indiquent que cet etudiant est en dernière année d'étude de premier cycle et qu’il n’a pas encore postulé pour obtenir son diplôme.");
-      lngStrs.setAppliedToGradHeader("Vous avez postulé pour obtenir son diplôme.");
+      lngStrs.setAppliedToGradHeader("Vous avez postulé pour obtenir votre diplôme.");
       lngStrs.setAppliedToGradBody(
-          "Nos archives indiquent que vous avez postulé pour obtenir son diplôme. Vérifiez votre messagerie pour plus d'informations.");
+          "Nos archives indiquent que vous avez postulé pour obtenir votre diplôme. Vérifiez votre messagerie pour plus d'informations.");
       lngStrs.setAdvisingAppliedToGradBody(
           "Nos archives indiquent que cet étudiant a postulé pour obtenir son diplôme.");
       lngStrs.setDisplay("Consulter vos informations personnelles.");
